@@ -1,3 +1,5 @@
+/* TODO "THIS CSS IS BASE AND APPLIES TO THE FULL WEBSITE" */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,11 +18,14 @@ button {
   font-weight: bold;
   gap: 10px;
   background-color: #466273;
+  color: white;
   width: 100%;
   height: 100%;
-  border: px solid black;
+  border: 1px solid black;
   border-radius: 10px;
 }
+
+/** Main container and Calculator body Related Css */
 
 .container {
   display: flex;
@@ -39,14 +44,19 @@ button {
   height: 70vh;
   width: 70vw;
   max-width: 400px;
-  max-height: 800px;
+  max-height: 600px;
   min-width: 400px;
   min-height: 550px;
-  border: 10px solid rgb(61, 59, 59);
+  border: 10px solid #253759;
   border-radius: 5px;
 }
 
+/** Display layout and lines Related Css */
+
 .display {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
   width: 100%;
   height: 15vh;
   border: 5px solid black;
@@ -54,13 +64,33 @@ button {
   color: black;
 }
 
+.past-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 18px;
+  width: 100%;
+  height: 30%;
+}
+
+.current-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+  font-size: 30px;
+}
+
+/** Work area Related CSS*/
+
 .workarea {
-  background-color: black;
+  background-color: #253759;
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  padding: 0;
+  padding: 5px;
   flex-direction: column;
 }
 
@@ -70,15 +100,11 @@ button {
 }
 
 #clearall {
-  max-width: 300vh;
-}
-
-#clearall {
-  background-color: rgb(221, 63, 63);
+  background-color: #c42c45;
 }
 
 #return {
-  background-color: rgb(61, 197, 250);
+  background-color: rgb(17, 101, 134);
 }
 
 #percent {
@@ -102,5 +128,10 @@ button {
 }
 
 .result {
-  background-color: rgb(241, 245, 245);
+  background-color: #b78c38;
+  width: 100%;
+}
+
+#zero {
+  width: 205%;
 }
